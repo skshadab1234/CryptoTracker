@@ -84,6 +84,10 @@ export default function Header(props) {
                                 >
                                     <MenuItem value={"INR"}>INR</MenuItem>
                                     <MenuItem value={'USD'}>USD</MenuItem>
+                                    <MenuItem value={'aed'}>UAE</MenuItem>
+                                    <MenuItem value={'jpy'}>Japanese</MenuItem>
+                                    <MenuItem value={'btc'}>Bitcoin</MenuItem>
+                                    <MenuItem value={'eth'}>Etherum</MenuItem>
                                 </Select>
                             </Toolbar>
                         </Container>
