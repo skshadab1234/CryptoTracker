@@ -34,7 +34,7 @@ export default function CoinsTable() {
 
   const { currency, symbol } = CryptoState();
 
-  const useStyles = makeStyles({
+  const useStyles = makeStyles((theme) => ({
     row: {
       backgroundColor: "#050a30",
       cursor: "pointer",
@@ -46,8 +46,14 @@ export default function CoinsTable() {
     iconExpand: {
         position: 'relative',
         bottom: "-8px"
-    }
-  });
+    },
+    heading: {
+      fontWeight: "bold",
+      [theme.breakpoints.down('md')]: {
+        fontSize: 24
+      }
+    },
+  }));
 
   const classes = useStyles();
   const history = useHistory();
@@ -87,8 +93,9 @@ export default function CoinsTable() {
     <ThemeProvider theme={darkTheme}>
       <Container style={{ textAlign: "center" }}>
         <Typography
-          variant="h4"
-          style={{ margin: 18 }}
+          variant="h2"
+          className={classes.heading}
+          style={{ margin: 18,padding: 20,fontWeight: 'bold' }}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>

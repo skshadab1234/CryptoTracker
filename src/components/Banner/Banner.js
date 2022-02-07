@@ -24,6 +24,12 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
   },
+  heading: {
+    fontWeight: "bold",
+    [theme.breakpoints.down('md')]: {
+      fontSize: 24
+    }
+  },
 }));
 
 function Banner() {
@@ -34,7 +40,8 @@ function Banner() {
       <Container className={classes.bannerContent}>
         <div className={classes.tagline}>
           <Typography
-            variant="h3"
+            variant="h2"
+            className={classes.heading}
             style={{
               fontWeight: "bold",
               marginBottom: 15,

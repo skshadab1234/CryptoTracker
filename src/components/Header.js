@@ -65,7 +65,7 @@ export default function Header(props) {
     let history = useHistory();
 
     function handleClick() {
-        history.push("/");
+        history.push("/crypto-tracker");
     }
 
     const { currency, setCurrency } = CryptoState()
