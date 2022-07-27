@@ -1,7 +1,7 @@
 {
   "name": "crypto-tracker-rebuild",
   "version": "0.1.0",
-  "homepage" : "http://shadabzone.onlinewebshop.net/crypto-tracker/",
+  "homepage" : "https://crypto-tracker-sandy-nu.vercel.app/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
